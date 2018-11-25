@@ -1,22 +1,59 @@
+<div class="main-container">
 
-<div class="main-container" padding>
-  <h6>5678</h6>
- 
-  <nav class="subnav" >
-      Lauren McCraw
-  </nav>
+    <nav class="subnav">
+        <clr-dropdown>
+            <button type="button" class="btn btn btn-link" clrDropdownTrigger>
+                EXPLORE
+                <clr-icon shape="caret down"></clr-icon>
+            </button>
+            <clr-dropdown-menu clrPosition="bottom-left" *clrIfOpen>
+                <button type="button" clrDropdownItem>ABOUT</button>
+                <button type="button" clrDropdownItem>TRAVEL</button>
+                <button type="button" clrDropdownItem>SHOP</button>
+                <button type="button" disabled clrDropdownItem>Disabled Action</button>
+            </clr-dropdown-menu>
+        </clr-dropdown>
+      |  
+      <button type="button" class="btn btn-icon" disabled>
+          <clr-icon shape="home"></clr-icon>
+      </button>
+          
+       
+    </nav>
+    
 
-  <div class="circle">
-    <!-- shape that will go around the buttons -->
-    <svg height="350" width="350">
-      <circle cx="200" cy="200" r="120" stroke="black" stroke-width="3" fill="white" />
-    </svg>
-    <!-- buttons to select the top three topics -->
-    <button color="red" type="mat-icon" (click)="button()"> 
-        abcd 
-    </button>
+   
+  
 
+  <div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+      <a href="..." class="container">
+        <img src="assets/shape.jpg" alt="..." />
+        <button class="btn">TRAVEL</button>
+      </a>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+      <a href="..." class="container">
+          <img src="assets/shape.jpg" alt="..." />
+          <button class="btn">SHOP</button>
+      </a>
+    </div>
+  
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+      <a href="..." class="container">
+          <img src="assets/shape.jpg" alt="..." />
+          <button class="btn">ABOUT</button>
+      </a>
+    </div>
   </div>
+
+  <div class="follow"> 
+    <button class="button" class="btn btn-link"> <strong>Follow Along</strong> </button>
+  </div>
+
+
+
+  
 
   
 </div>

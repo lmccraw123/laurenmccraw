@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { TransitiveCompileNgModuleMetadata } from '@angular/compiler';
+import { text } from '@angular/core/src/render3/instructions';
+// import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,21 +9,16 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  
 
-  constructor(private _router: Router) { }
+
+  constructor() { }
+  // place below into above () above once tha app-routing module is updated
+  // private _router: Router
 
   ngOnInit() {
   }
-  // main topic buttons inside of shapes
-  topicOne(){
-    this._router.navigate(['']);
-  }
 
-  topicTwo(){
-    this._router.navigate(['']);
-  }
+  
 
-  topicThree(){
-    this._router.navigate(['']);
-  }
 }

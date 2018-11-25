@@ -1,9 +1,59 @@
 .main-container{
-    
+    background-color:white;
+    margin: 20px;
+    text-align: center;
 }
 
 .subnav{
-    background-color: #E9967A;
-    text-align: center;
-  
+    display: inline-block;
+    text-align: center !important;
+    font-size: 35px;
+    font-weight: 500;
+    background-color:white;
+    color: navy;
 }
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+    position: center;
+    width: 50%;
+  }
+  
+  /* Make the image responsive */
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: navy;
+    font-size: 20px;
+    font-style: italic;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn:hover {
+    background-color: white;;
+  }
+
+  .follow{
+      text-align: end !important;
+      
+  }
+
+  .follow .bbtn btn-link{
+    background-color: lightpink !important;
+  }
+
+  
+
