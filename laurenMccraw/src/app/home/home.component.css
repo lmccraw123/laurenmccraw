@@ -1,7 +1,7 @@
 .main-container{
     background-color:white;
-    margin: 20px;
     text-align: center;
+    
 }
 
 .subnav{
@@ -11,12 +11,14 @@
     font-weight: 500;
     background-color:white;
     color: navy;
+    
 }
 
 /* Container needed to position the button. Adjust the width as needed */
 .container {
     position: center;
     width: 50%;
+    border:none !important;
   }
   
   /* Make the image responsive */
@@ -46,14 +48,9 @@
     background-color: white;;
   }
 
-  .follow{
-      text-align: end !important;
-      
-  }
-
-  .follow .bbtn btn-link{
-    background-color: lightpink !important;
-  }
+.list{
+    color:darkblue;
+}
 
   
 
