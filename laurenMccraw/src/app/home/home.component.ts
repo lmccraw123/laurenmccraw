@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TransitiveCompileNgModuleMetadata } from '@angular/compiler';
-import { text } from '@angular/core/src/render3/instructions';
-// import { Router, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -9,16 +8,21 @@ import { text } from '@angular/core/src/render3/instructions';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  
 
 
-  constructor() { }
+  constructor(private _router: Router) { }
   // place below into above () above once tha app-routing module is updated
   // private _router: Router
 
   ngOnInit() {
   }
 
-  
+  aboutSubmit() {
+    this._router.navigate(['about']);
+  }
+
+  travelSubmit() {
+    this._router.navigate(['travel']);
+  }
 
 }

@@ -1,7 +1,5 @@
+
 <div class="main-container">
-
-  
-
     <nav class="subnav">
         <clr-dropdown>
             <button type="button" class="btn btn btn-link" clrDropdownTrigger>
@@ -9,13 +7,14 @@
                 <clr-icon shape="caret down"></clr-icon>
             </button>
             <clr-dropdown-menu clrPosition="bottom-left" *clrIfOpen >
-                <button type="button" class="list" clrDropdownItem><STRONG>ABOUT</STRONG></button>
-                <button type="button" class="list" clrDropdownItem><STRONG>TRAVEL</STRONG></button>
-                <button type="button" class="list" clrDropdownItem><STRONG>SHOP</STRONG></button>
-                <button type="button" class="list" clrDropdownItem><STRONG>HOME</STRONG></button>
-                <button type="button" class="list" clrDropdownItem><STRONG>BEAUTY</STRONG></button>
-                <button type="button" class="list" clrDropdownItem><STRONG>REVIEWS</STRONG></button>
-            </clr-dropdown-menu>
+               <a> <button type="button" class=" nav-link nav-text" routerLink="about" (click)="aboutSubmit()"  clrDropdownItem ><STRONG>ABOUT</STRONG></button>
+                <button type="button" class="list" routerLink="travel" clrDropdownItem (click)="travelSubmit()" ><STRONG>TRAVEL</STRONG></button>
+                <button type="button" class="list" routerLink="shop" clrDropdownItem (click)="shopSubmit()" ><STRONG>SHOP</STRONG></button>
+                <button type="button" class="list" routerLink="house" clrDropdownItem (click)="houseSubmit()" ><STRONG>INTERIOR</STRONG></button>
+                <button type="button" class="list" routerLink="beauty" clrDropdownItem (click)="beautySubmit()" ><STRONG>BEAUTY</STRONG></button>
+                <button type="button" class="list" routerLink="reviews" clrDropdownItem (click)="reviewsSubmit()" ><STRONG>REVIEWS</STRONG></button>
+              </a>
+              </clr-dropdown-menu>
         </clr-dropdown>
       |  
       <button type="button" class="btn btn btn-link">
@@ -31,9 +30,10 @@
     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <a href="..." class="container">
         <img src="assets/shape.jpg" alt="..." />
-        <button class="btn">TRAVEL</button>
+        <button  class="btn" click="travelSubmit()">TRAVEL</button>
       </a>
     </div>
+    
     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <a href="..." class="container">
           <img src="assets/shape.jpg" alt="..." />
