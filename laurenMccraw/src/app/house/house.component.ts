@@ -12,4 +12,6 @@ export class HouseComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }
